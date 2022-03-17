@@ -31,6 +31,7 @@ const rerenderCells = function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = '#4694ff';
     ctx.strokeStyle = '#f7f7f7';
+    ctx.lineWidth = cellSize / 32;
     for (let row = 0; row < cellInfo.cell.length; row++) {
       for (let column = 0; column < cellInfo.cell[row].length; column++) {
         if (cellInfo.cell[row][column] === 1) {
