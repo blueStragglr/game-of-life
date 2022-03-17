@@ -1,0 +1,53 @@
+:root {
+  --dark: #111218;
+  --primary: #222324;
+  --inverse: #f7f7f7;
+  --inverse-secondary: #848483;
+
+  --purple: #ff3473;
+  --pink: #ff457E;
+  --orange: #ff5353;
+  --mandarine: #ff8f4a;
+  --yellow: #ffdb45;
+  --cobalt: #4694ff;
+  --green: #30e583;
+}
+
+body {
+  padding: 0;
+  background-color: var(--dark);
+  color: var(--inverse);
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.title{
+  padding: 20px;
+}
+
+.content{
+  display: flex;
+  height: 800px;
+}
+
+.canvas-wrapper{
+  border: 1px solid var(--inverse);
+  height: 640px;
+  width: 640px;
+  flex: none;
+}
+
+canvas {
+  height: 640px;
+  width: 640px;
+}
+
+.control-panel{
+  padding: 15px;
+}
+
+.author{
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}

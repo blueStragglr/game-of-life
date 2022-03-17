@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Game of Life</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<h2>
+  Game of Life
+</h2>
+<div class="content">
+  <div class="canvas-wrapper">
+    <canvas id="canvas" width="640" height="640"></canvas>
+  </div>
+  <div class="control-panel">
+    <div class="cell-size">
+      <label for="cellSizeInput">Cell size</label><br/>
+      <input type="range" id="cellSizeInput" name="cellSizeInput" min="1" max="64">
+    </div>
+    <div class="speed">
+      <label for="lifetime">Speed(Lifetime)</label><br/>
+      <input type="range" id="lifetime" name="lifetime" min="1" max="17">
+    </div>
+    <div class="ratio">
+      <label for="ratio">Initial cell ratio</label><br/>
+      <input type="range" id="ratio" name="ratio" min="1" max="19" value="2">
+    </div>
+    <br/>
+    <br/>
+    <button onclick="initializeCanvas()">
+      re-generate
+    </button>
+    <br/>
+    <button onclick="startLifeGame()">
+      start
+    </button>
+    <br/>
+    <button onclick="stopLifeGame()">
+      stop
+    </button>
+    <br/>
+    <button onclick="nextFrame()">
+      next frame
+    </button>
+    <br/>
+    <br/>
+    <button onclick="glider()">
+      glider
+    </button>
+  </div>
+</div>
+<div class="author">
+  Author: blueStragglr
+</div>
+<script src="index.js"></script>
+</body>
+</html>
