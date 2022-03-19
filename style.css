@@ -21,6 +21,10 @@ body {
   margin: 0 auto;
 }
 
+a {
+  color: var(--inverse);
+}
+
 .title{
   padding: 20px;
 }
